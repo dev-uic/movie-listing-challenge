@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500i,700');
+
+$roboto: 'Roboto', sans-serif;
+
+body {
+  font-family: $roboto;
+  font-size: $fs-base;
+  line-height: 1.3em;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 7px;
+}
+
+h1 {
+  font-size: $fs-headline;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: $fs-h2;
+  line-height: 1.15;
+}
+
+h3 {
+  font-size: $fs-h3;
+  line-height: 1.15;
+}
+
+h4 {
+  font-size: $fs-h4;
+  line-height: 1.15;
+}
+
+.heading {
+  display: block;
+
+  &--red {
+    color: $brand-red;
+  }
+
+  &--italic {
+    font-style: italic;
+    font-weight: normal;
+  }
+}
+
+.heading--1 {
+  @extend h1;
+}
+
+.heading--2 {
+  @extend h2;
+}
+
+.heading--3 {
+  @extend h3;
+}
+
+.heading--4 {
+  @extend h4;
+}
+
+.heading--5 {
+  @extend h5;
+}
+
+.heading--6 {
+  @extend h6;
+}
+
+p {
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
